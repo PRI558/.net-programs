@@ -1,0 +1,18 @@
+string replace 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Original string
+        string originalString = "I am learning .NET programming.";
+
+        // Replace ".NET" with "C#"
+        string modifiedString = originalString.Replace(".NET", "C#");
+
+        // Output the original and modified strings
+        Console.WriteLine("Original: " + originalString);
+        Console.WriteLine("Modified: " + modifiedString);
+    }
+}
