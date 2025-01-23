@@ -1,0 +1,25 @@
+ARRAY 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double[] numbers = { 10.5, 20.3, 30.4, 40.6, 50.7 };
+        double average =CalculateAverage(numbers); 
+        Console.WriteLine("The numbers are: " + string.Join(", ", numbers));
+        Console.WriteLine($"The average of the numbers is: {average}");
+    }
+    static double CalculateAverage(double[] numbers)
+    {
+        double sum = 0;
+        foreach (var number in numbers)
+        {
+            sum += number;
+        }
+        return sum / numbers.Length;
+    }
+}
+output 
+The numbers are: 10.5, 20.3, 30.4, 40.6, 50.7
+The average of the numbers is: 30.5
