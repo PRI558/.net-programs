@@ -1,0 +1,18 @@
+greetings
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Prompt user for their name
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+
+        // Display a personalized greeting message
+        Console.WriteLine($"Hello, {name}! Welcome to the .NET program.");
+    }
+}
+output 
+Enter your name: selvi
+Hello, selvi ! Welcome to the .NET program.
