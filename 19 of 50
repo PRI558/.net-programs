@@ -1,0 +1,36 @@
+File Handling (Reading and Writing to a Text File)
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Define the file path
+        string filePath = "example.txt";
+
+        // Write content to the file
+        Console.WriteLine("Writing to file...");
+        string contentToWrite = "Hello, this is a sample file for file handling in C#!";
+        File.WriteAllText(filePath, contentToWrite);
+
+        // Read content from the file
+        Console.WriteLine("\nReading from file...");
+        if (File.Exists(filePath))
+        {
+            string contentRead = File.ReadAllText(filePath);
+            Console.WriteLine("Content read from file:");
+            Console.WriteLine(contentRead);
+        }
+        else
+        {
+            Console.WriteLine("File does not exist.");
+        }
+    }
+}
+ output 
+ Writing to file...
+
+Reading from file...
+Content read from file:
+Hello, this is a sample file for file handling in C#!
