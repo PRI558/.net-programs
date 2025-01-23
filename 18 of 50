@@ -1,0 +1,18 @@
+console program 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Ask for user's name
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine();
+
+        // Greet the user
+        Console.WriteLine($"Hello, {name}! Welcome to the simple C# program.");
+    }
+}
+output 
+Enter your name: John
+Hello, John! Welcome to the simple C# program.
