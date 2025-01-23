@@ -1,0 +1,50 @@
+delete a element
+using System;
+using System.Collections.Generic;
+
+class DeleteElementFromList
+{
+    static void Main()
+    {
+        // Initialize a list of integers
+        List<int> numbers = new List<int> { 10, 20, 30, 40, 50 };
+
+        // Display the original list
+        Console.WriteLine("Original List:");
+        foreach (int num in numbers)
+        {
+            Console.Write(num + " ");
+        }
+        Console.WriteLine();  // For new line
+
+        // Ask the user which number they want to remove
+        Console.Write("Enter the number to remove from the list: ");
+        int numberToRemove = Convert.ToInt32(Console.ReadLine());
+
+        // Remove the number from the list
+        bool removed = numbers.Remove(numberToRemove);
+
+        if (removed)
+        {
+            Console.WriteLine($"The number {numberToRemove} was removed successfully.");
+        }
+        else
+        {
+            Console.WriteLine($"The number {numberToRemove} was not found in the list.");
+        }
+
+        // Display the updated list
+        Console.WriteLine("Updated List:");
+        foreach (int num in numbers)
+        {
+            Console.Write(num + " ");
+        }
+    }
+}
+output
+Original List:
+10 20 30 40 50
+Enter the number to remove from the list: 30
+The number 30 was removed successfully.
+Updated List:
+10 20 40 50
