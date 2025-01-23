@@ -1,0 +1,26 @@
+area of a rectangle 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Ask for the length of the rectangle
+        Console.Write("Enter the length of the rectangle: ");
+        double length = Convert.ToDouble(Console.ReadLine());
+
+        // Ask for the width of the rectangle
+        Console.Write("Enter the width of the rectangle: ");
+        double width = Convert.ToDouble(Console.ReadLine());
+
+        // Calculate the area of the rectangle
+        double area = length * width;
+
+        // Display the result
+        Console.WriteLine($"The area of the rectangle is: {area}");
+    }
+}
+output 
+Enter the length of the rectangle: 5
+Enter the width of the rectangle: 10
+The area of the rectangle is: 50
