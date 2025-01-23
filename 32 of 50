@@ -1,0 +1,51 @@
+add a element 
+using System;
+using System.Collections.Generic;
+
+class AddElementsToList
+{
+    static void Main()
+    {
+        // Create a new list to store integers
+        List<int> numbers = new List<int>();
+
+        // Add elements to the list
+        numbers.Add(10); // Adds 10 to the list
+        numbers.Add(20); // Adds 20 to the list
+        numbers.Add(30); // Adds 30 to the list
+        numbers.Add(40); // Adds 40 to the list
+
+        // Display the list elements
+        Console.WriteLine("Elements in the list:");
+
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+
+        // Add more elements dynamically
+        Console.Write("Enter a number to add to the list: ");
+        int newNumber = Convert.ToInt32(Console.ReadLine());
+        numbers.Add(newNumber); // Add the number entered by the user
+
+        // Display the updated list
+        Console.WriteLine("Updated list after adding your number:");
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+    }
+}
+output 
+Elements in the list:
+10
+20
+30
+40
+Enter a number to add to the list: 50
+Updated list after adding your number:
+10
+20
+30
+40
+50
