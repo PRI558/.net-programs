@@ -1,0 +1,32 @@
+factorial of a number 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Ask the user to input a number
+        Console.Write("Enter a number: ");
+        int number = int.Parse(Console.ReadLine());
+
+        // Call the method to calculate factorial
+        long factorial = CalculateFactorial(number);
+
+        // Output the result
+        Console.WriteLine($"The factorial of {number} is: {factorial}");
+    }
+
+    // Method to calculate factorial
+    static long CalculateFactorial(int n)
+    {
+        long result = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            result *= i;
+        }
+        return result;
+    }
+}
+output 
+Enter a number: 5
+The factorial of 5 is: 120
