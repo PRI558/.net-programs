@@ -1,0 +1,31 @@
+perimeter of square 
+using System;
+
+namespace SquarePerimeterCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ask the user to input the side length of the square
+            Console.Write("Enter the side length of the square: ");
+            double side = Convert.ToDouble(Console.ReadLine());
+
+            // Calculate the perimeter of the square
+            double perimeter = CalculatePerimeter(side);
+
+            // Display the result
+            Console.WriteLine($"The perimeter of the square with side length {side} is: {perimeter}");
+        }
+
+        // Method to calculate the perimeter of the square
+        static double CalculatePerimeter(double side)
+        {
+            return 4 * side; // Perimeter = 4 * side
+        }
+    }
+}
+output 
+Enter the side length of the square: 6
+The perimeter of the square with side length 6 is: 24
+
