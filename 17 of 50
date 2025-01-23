@@ -1,0 +1,45 @@
+Find Prime Numbers in a Range
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the start number of the range: ");
+        int start = int.Parse(Console.ReadLine());
+        
+        Console.Write("Enter the end number of the range: ");
+        int end = int.Parse(Console.ReadLine());
+
+        Console.WriteLine($"Prime numbers between {start} and {end}:");
+
+        // Loop through the range
+        for (int num = start; num <= end; num++)
+        {
+            if (IsPrime(num))
+            {
+                Console.Write(num + " ");
+            }
+        }
+    }
+
+    // Method to check if a number is prime
+    static bool IsPrime(int number)
+    {
+        if (number <= 1)
+            return false;
+        
+        for (int i = 2; i <= Math.Sqrt(number); i++)
+        {
+            if (number % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+}
+output 
+Enter the start number of the range: 1
+Enter the end number of the range: 20
+Prime numbers between 1 and 20:
+2 3 5 7 11 13 17 19
