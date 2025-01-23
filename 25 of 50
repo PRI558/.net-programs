@@ -1,0 +1,30 @@
+area of a cirle
+using System;
+
+namespace CircleAreaCalculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ask the user to input the radius of the circle
+            Console.Write("Enter the radius of the circle: ");
+            double radius = Convert.ToDouble(Console.ReadLine());
+
+            // Calculate the area of the circle
+            double area = CalculateCircleArea(radius);
+
+            // Display the result
+            Console.WriteLine($"The area of the circle with radius {radius} is: {area}");
+        }
+
+        // Method to calculate the area of the circle
+        static double CalculateCircleArea(double r)
+        {
+            return Math.PI * r * r; // Area = π * r^2
+        }
+    }
+}
+output
+Enter the radius of the circle: 5
+The area of the circle with radius 5 is: 78.53981633974483
