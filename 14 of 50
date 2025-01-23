@@ -1,0 +1,32 @@
+palindrome
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a string: ");
+        string input = Console.ReadLine();
+
+        // Remove spaces and convert to lowercase for case-insensitive comparison
+        string cleanedInput = input.Replace(" ", "").ToLower();
+
+        // Reverse the cleaned string
+        char[] charArray = cleanedInput.ToCharArray();
+        Array.Reverse(charArray);
+        string reversedInput = new string(charArray);
+
+        // Check if the string is a palindrome
+        if (cleanedInput == reversedInput)
+        {
+            Console.WriteLine($"{input} is a palindrome.");
+        }
+        else
+        {
+            Console.WriteLine($"{input} is not a palindrome.");
+        }
+    }
+}
+ output 
+ Enter a string: racecar
+racecar is a palindrome.
