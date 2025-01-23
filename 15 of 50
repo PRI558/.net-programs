@@ -1,0 +1,33 @@
+count words in text file
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the file path: ");
+        string filePath = Console.ReadLine();
+
+        try
+        {
+            // Read the entire text file
+            string fileContent = File.ReadAllText(filePath);
+
+            // Split the content into words based on spaces and other punctuation
+            string[] words = fileContent.Split(new char[] { ' ', '\n', '\r', '\t', '.', ',', ';', '!', '?' }, StringSplitOptions.RemoveEmptyEntries);
+
+            // Count the number of words
+            int wordCount = words.Length;
+
+            Console.WriteLine($"The file contains {wordCount} words.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error reading file: {ex.Message}");
+        }
+    }
+}
+output
+Enter the file path: C:\path\to\your\file.txt
+The file contains 7 words.
