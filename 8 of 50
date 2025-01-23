@@ -1,0 +1,22 @@
+sum
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the first number: ");
+        double num1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter the second number: ");
+        double num2 = Convert.ToDouble(Console.ReadLine());
+
+        double sum = num1 + num2;
+
+        Console.WriteLine($"The sum of {num1} and {num2} is {sum}.");
+    }
+}
+output 
+Enter the first number: 5
+Enter the second number: 10
+The sum of 5 and 10 is 15.
