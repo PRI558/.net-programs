@@ -1,0 +1,37 @@
+multiplication table
+using System;
+
+namespace MultiplicationTable
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ask the user to input a number
+            Console.Write("Enter a number to display its multiplication table: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            // Print the multiplication table
+            Console.WriteLine($"Multiplication table for {number}:");
+
+            for (int i = 1; i <= 10; i++)
+            {
+                int result = number * i;
+                Console.WriteLine($"{number} x {i} = {result}");
+            }
+        }
+    }
+}
+output 
+Enter a number to display its multiplication table: 7
+Multiplication table for 7:
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
