@@ -1,0 +1,27 @@
+string concatenation
+using System;
+
+namespace StringConcatenationExample
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Ask the user to input two strings
+            Console.Write("Enter the first string: ");
+            string firstString = Console.ReadLine();
+
+            Console.Write("Enter the second string: ");
+            string secondString = Console.ReadLine();
+
+            // Concatenate the two strings using the "+" operator
+            string result = firstString + " " + secondString;
+
+            // Display the concatenated result
+            Console.WriteLine("Concatenated String: " + result);
+        }
+    }
+}
+output 
+Enter the first string: Hello
+Enter the second string: World
