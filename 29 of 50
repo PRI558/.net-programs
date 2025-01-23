@@ -1,0 +1,23 @@
+count digits in number
+using System;
+
+class CountDigits
+{
+    static void Main()
+    {
+        Console.Write("Enter a number: ");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        int count = 0;
+        while (number != 0)
+        {
+            number /= 10;
+            count++;
+        }
+
+        Console.WriteLine("The number has " + count + " digits.");
+    }
+}
+output 
+Enter a number: 12345
+The number has 5 digits.
